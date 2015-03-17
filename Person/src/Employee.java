@@ -1,10 +1,8 @@
-import java.util.Date;
-
 public class Employee extends Person {
 	
 	private String office;
 	private double salary;
-	private Date date;
+	private myDate date;
 
 	@Override
 	public String toString() {
@@ -14,7 +12,7 @@ public class Employee extends Person {
 	public Employee() {
 	}
 	
-	public Employee(String office, double salary, Date date) {
+	public Employee(String office, double salary, myDate date) {
 		this.office = office;
 		this.salary = salary;
 		this.date = date;
@@ -36,11 +34,11 @@ public class Employee extends Person {
 		this.salary = salary;
 	}
 
-	public Date getDate() {
+	public myDate getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(myDate date) {
 		this.date = date;
 	}
 }
