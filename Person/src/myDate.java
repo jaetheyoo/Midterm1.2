@@ -4,6 +4,11 @@ public class myDate {
 	String month;
 	int day;
 	
+	@Override
+	public String toString() {
+		return "Class MyDate: The " + day + " day of " + month + " in the year " + year;
+	}
+	
 	public int getYear() {
 		return year;
 	}
